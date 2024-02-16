@@ -1,0 +1,291 @@
+*{
+    font-family: arial;
+}
+
+.wrapper1{
+    /* width: 100%;
+    max- */
+    width: 1200px;
+    margin-bottom: 30px;
+    margin-left: 200px;
+}
+
+.wrapper2{
+    width: 100%;
+    background: rgb(245, 4, 145);
+    margin-top: 20px;
+}
+
+.wrapper3{
+    width: 100%;
+    background: rgb(141, 3, 83);
+    margin-top: none;
+}
+
+.flex-container1{
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    background: white;
+    height: 1px;
+}
+
+.flex-container2{
+    display: flex;
+    height: 70px;
+    align-content: center;
+    justify-content: center;
+}
+
+.flex-container3{
+    display: flex;
+    height: 40px;
+    align-content: center;
+    justify-content: center;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.image{
+    max-width: 150px;
+    height: 60px;
+    padding: 10px;
+}
+
+.text-item{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    margin-top: 25px;
+}
+
+.text-items{
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    margin-top: 13px;
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.categories{
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    margin-top: 13px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.search-input{
+    padding: 10px;
+    width: 300px;
+    margin-top: 4px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 168, 6);
+    padding: 8px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    height: 19px;
+    width: 25px;
+    margin-top: 18px;
+} 
+
+.magnifying-glass{
+    font-size: 17px;
+    color: white;
+}
+
+.question-container{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: palevioletred;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.question-mark{
+    font-size: 20px;
+    color: white;
+    margin-top: 5px;
+}
+
+.help{
+    padding: 15px;
+    color: white;
+    margin-left: -5px;
+    margin-top: 10px;
+}
+
+.down-arrowhead{
+    font-size: 20px;
+    color: white;
+    margin-top: 15px;
+    margin-left: -10px;
+}
+
+.green-box{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(7, 201, 104);
+    border-radius: 2px;
+    height:30px;
+    margin-top: 15px;
+}
+
+.cart-icon{
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.cart-text{
+    margin-right: 10px;
+    color: white;
+}
+
+.cart-count{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.menu-button{
+    padding-right: 15px;
+    color: white;
+    margin-top: 12px;
+    margin-left: -8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#content{
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    grid-template-areas:
+    "groceriesimg groceriesimg groceriesimg img1 img2"
+    "groceriesimg groceriesimg groceriesimg img3 img4";
+}
+
+#content > *{
+    padding: 10px;
+}
+
+header{
+    grid-area: groceriesimg;
+    border-radius: 10px;
+}
+
+main{
+    grid-area: img1;
+    border-radius: 5px;
+}
+
+section{
+    grid-area: img2;
+    border-radius: 5px;
+}
+
+aside{
+    grid-area: img3;
+    border-radius: 5px;
+}
+
+nav{
+    grid-area: img4;
+    border-radius: 5px;
+}
+
+.groceriesimg{
+    height:530px;
+    border-radius: 5px;
+}
+
+.img1{
+    border-radius: 5px;
+}
+
+.img2{
+    border-radius: 5px;
+}
+
+.img3{
+    border-radius: 5px;
+}
+
+.img4{
+    border-radius: 5px;
+}
+
+#content2{
+    display: grid;
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 100px;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-shadow: 1px;
+    grid-template-areas:
+    "kongablog paybills offlinestore brandstores bookflights watchkongatv";
+}
+
+#content > *{
+    padding: 15px;
+}
+
+.kongablog{
+    grid-area: kongablog;
+    border-radius: 10px;
+    margin-left: 5px;
+    
+}
+
+.paybills{
+    grid-area: paybills;
+    border-radius: 5px;
+}
+
+.offlinestore{
+    grid-area: offlinestore;
+    border-radius: 5px;
+}
+
+.brandstores{
+    grid-area: brandstores;
+    border-radius: 5px;
+}
+
+.bookflights{
+    grid-area: bookflights;
+    border-radius: 5px;
+}
+
+.watchkongatv{
+    grid-area: watchkongatv;
+}
